@@ -10,7 +10,7 @@ public class HomeController {
 
 	@GetMapping(path = "/getData/{dataKey}")
 	public DataResponse getAllEndUserAnswerByFormId(@PathVariable String dataKey) {
-		return new DataResponse(dataKey);
+		return new DataResponse("Hey! " + dataKey);
 	}
 	
 }
